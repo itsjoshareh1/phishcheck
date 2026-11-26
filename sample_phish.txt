@@ -1,0 +1,8 @@
+From: security@paypa1-support.xyz
+Subject: URGENT: Your account has been suspended
+
+Dear customer, we detected unusual activity. Verify your account immediately
+or it will be closed within 24 hours.
+
+Sign in here: http://paypal-secure-login-verify.xyz/login
+Or use: http://bit.ly/3xYzAbc
