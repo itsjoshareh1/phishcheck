@@ -2,14 +2,22 @@
 
 Paste a suspicious email or link and get a risk score from 0 to 100 plus a plain-English list of why.
 
-**Status:** work in progress. A rule-based starter works today; AI explanations and a web UI are next.
+**Status:** work in progress. A rule-based starter works today; a basic Streamlit web app is included; AI explanations are next.
 
 ## Try it
 
 ```bash
-python phishcheck.py sample_phish.txt     # should score HIGH RISK
-python phishcheck.py sample_legit.txt     # should score LOOKS OK
-pip install -r requirements.txt && pytest
+pip install -r requirements.txt
+streamlit run app.py          # opens the web app in your browser
+```
+
+Paste `sample_phish.txt` into the box: it should score HIGH RISK. `sample_legit.txt` should score LOOKS OK.
+
+Command line and tests still work:
+
+```bash
+python3 phishcheck.py sample_phish.txt
+pytest
 ```
 
 ## How it works
@@ -26,7 +34,7 @@ pip install -r requirements.txt && pytest
 - [ ] Sender header checks (From vs Reply-To)
 - [ ] Claude explains the verdict in plain language
 - [ ] Evaluation on labelled phishing and legit samples
-- [ ] Streamlit web app
+- [x] Streamlit web app (basic)
 
 ## Limits
 
